@@ -14,6 +14,8 @@
 
 ### Deployed Project Link
 
+https://cocktails-db-cyan.vercel.app/
+
 ### Cocktails API LINK
 
 https://www.thecocktaildb.com/api.php
