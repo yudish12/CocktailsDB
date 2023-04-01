@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Changa+One&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 10rem;
+  box-shadow: 3px 7px 4px 0 #003e6a;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.form {
+  padding: 2rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 3px 5px 4px 0 #003e6a;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+#input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem;
+}
+#input:focus {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.label {
+  color: #0a4f80;
+  line-height: 2;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+}
+.title {
+  font-size: 1.5rem;
+  line-height: 2;
+  letter-spacing: 4px;
+}
+
+.cocktails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 12rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.cocktail-card {
+  margin: 2rem auto;
+  width: 300px;
+  box-shadow: 2px 3px 3px 0 #003e6a;
+  transition: all 0.5s;
+  padding: 2rem;
+}
+.cocktail-card:hover {
+  box-shadow: 6px 8px 4px 0 #003e6a;
+}
+
+.cocktail-card img {
+  width: 250px;
+  border-radius: 4px;
+  height: 200px;
+}
+.cocktail-card h1 {
+  font-size: 1.5rem;
+  color: #003e6a;
+}
+.btn {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #003e6a;
+  outline: none;
+  padding: 0.2rem 1rem;
+  border: 1px solid #003e6a;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.btn:hover {
+  background-color: #0096ff;
+  border: 1px solid #0096ff;
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.drink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem;
+  gap: 2rem;
+}
+
+.drink img {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+}
+.drink p {
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 1.8;
+  padding: 10px 0;
+}
+.drink-data {
+  background: #4dabed;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+}
+.cocktail-title {
+  text-align: center;
+  margin-top: 3rem;
+}
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3rem;
+  row-gap: 4rem;
+  column-gap: 3rem;
+}
+.category-img {
+  width: 400px;
+  height: 350px;
+  transition: all 0.7s;
+}
+.link {
+  position: relative;
+}
+.link h1 {
+  /* position: absolute;
+  top: -150px;
+  left: 120px; */
+  color: rgb(0, 0, 0);
+  opacity: 2;
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 4px;
+}
+/* .link ::before {
+  position: absolute;
+  content: "";
+  top: -284px;
+  left: 0px;
+  width: 400px;
+  height: 300px;
+  background: rgba(171, 195, 243, 0.8);
+} */
+.ordinary-drink {
+  grid-column: 1 / 3;
+}
+.ordinary-drink img {
+  width: 100%;
+}
+.category-heading {
+  text-align: center;
+  margin-top: 3rem;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-family: "Baloo 2", cursive;
+}
+.pagination-btn {
+  background-color: #003e6a;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.1rem 0.2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Baloo 2", cursive;
+}
+.pagination p {
+  font-family: "Baloo 2", cursive;
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgb(136, 133, 133);
+  padding: 0.1rem 1.2rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .home {
+    min-width: 1000px;
+  }
+
+  nav {
+    min-width: 1000px;
+  }
+  .cocktails {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem auto;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .drink {
+    min-width: 800px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home {
+    min-width: 800px;
+    margin-left: 5rem;
+  }
+  .loader {
+    margin-left: 26rem;
+  }
+  .drink {
+    min-width: 500px;
+    flex-direction: column;
+    margin: 2rem;
+    align-items: center;
+  }
+  .drink img {
+    width: 200px;
+    height: 200px;
+  }
+  .cocktail-details {
+    width: 300px;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .cocktail-title {
+    margin-left: 8rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cocktails {
+    grid-template-columns: 1fr;
+  }
+}
